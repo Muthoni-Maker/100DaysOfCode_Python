@@ -80,4 +80,96 @@ a=10
 print(a)
 b=10.789
 print(b)
-name="A
+name="Ann"
+print(name)
+ 
+ #Day 4
+ #For loop
+d="Kenya"
+for i in d:
+  print(i)
+ 
+ #While loop
+f=10
+while f<=1:
+ 	print(f)
+ 	
+ #Day 5
+ #Type casting
+ #Changing of data types in python
+number=10
+print(str(number))
+
+letter="200"
+print(int(letter))
+print(float(letter))
+
+one=1
+print(bool(one))
+
+#Strings
+#Strings in python are written in quotation marks
+
+sentence="My name is Aoko"
+print(sentence)
+
+#String Methods
+print(sentence.capitalize())
+print(sentence.upper())
+print(sentence.lower())
+print(sentence.casefold())
+print(sentence.islower())
+print(sentence.isupper())
+
+#String Concatination
+sentence2="I love singing"
+concatinate=sentence+sentence2
+print(concatinate)
+
+#String repetition
+print(sentence*2)
+
+#String Indexing
+#String indices must be intergers
+print(sentence[0])
+print(sentence[-1])
+print(sentence[6])
+
+#String slicing
+print(sentence[0:-1])
+print(sentence[ : ])
+print(sentence[1::1]) #Strides
+print(sentence[::-1])
+
+#String Formatting
+school="Moi Forces Cademy"
+year=2020
+statement="My school is called"+school+"{}".format(year)
+print (statement)
+
+#Day6
+#List In Python
+schools=["Kenya","Moi","Karima"]
+print(schools)
+for n in schools:
+	print(n)
+print(schools[2])
+print(schools[0:2])
+schools[0]="Kabarak"
+print(schools)
+
+#List methods
+schools.append("Naivasha")
+print(schools)
+schools.sort()
+print(schools)
+schools.reverse()
+print(schools)
+
+#List concatination
+schools2=["Njabini Boys","Bishop Gatimu"]
+add=schools+schools2
+print(add)
+print(schools*2)
+
+#Tuples
