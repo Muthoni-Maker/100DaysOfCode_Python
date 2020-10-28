@@ -68,3 +68,16 @@ elif student_one =="Anne":
 	
 else:
 	print("Not a member")
+	
+#Day 3
+#Python Data types
+"""Numbers
+     Floats
+     Strings
+     Booleans
+     """
+a=10
+print(a)
+b=10.789
+print(b)
+name="A
