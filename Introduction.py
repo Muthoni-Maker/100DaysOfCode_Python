@@ -175,8 +175,7 @@ add=schools+schools2
 print(add)
 print(schools*2)
 
-#Tuples
-
+#Tuples are immutable
 #Tuples
 #Tuples are python data structures that allows datasets to be stored inside paranthesis.Data in tuples is  organised.Tuples are mutable.
 
@@ -213,6 +212,7 @@ print(student.get("Age"))
 """When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
    You can use the values() method to return values of a dictionary
    Loop through both keys and values, by using the items() method
+   dictionaries keys allows immutable data types such as strings,numbers or tuples.Values takes in any data types
 """
 dict={"name":"Ivy","age":24,"schools":"Kabete"}
 print(dict)
@@ -234,5 +234,20 @@ for y in dict.values():
 
 for x,y in dict.items():
   print(x,y)
+
+  """Dictionary Methods"""
+  
+dict2={"game1":"ps","game2":"Gta","game3":"Walking Dead"}
+print(dict2.popitem())
+print(dict2.pop("game2"))
+print(dict2)
+dict2.update({"game2":"Zombie Hunters"})
+print(dict2)
+x=dict2.setdefault("game4","chese")
+print(x)
+print(dict2)
+dict.update(dict2)
+print(dict)
+
 
 	
