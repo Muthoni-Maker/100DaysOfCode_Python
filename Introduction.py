@@ -4,6 +4,7 @@
 #Python is an object-Oriented programming language
 #Can be used in web development,automation etc
 #Python uses indentation to show blocks of code
+"""Different flavours of python-CPython,Canopy,Jython,IronPython,PyPy,Anaconda,IPython"""
 
 #Day1
 
@@ -12,6 +13,8 @@
 #storing data.
 #Variables naming-Allows letters,numbers and underscores,uses camel case,does not allow use of reserved words
 #types of variables-metasyntactic
+                """-local variables
+                   -global variables"""
 
 a=12
 b=24
@@ -173,3 +176,63 @@ print(add)
 print(schools*2)
 
 #Tuples
+
+#Tuples
+#Tuples are python data structures that allows datasets to be stored inside paranthesis.Data in tuples is  organised.Tuples are mutable.
+
+
+names=("Ivy","Aaron","Mike","Nancy")
+print(names)
+print(names[0])
+for b in names:
+	print(b)
+
+
+###Day 7
+#Set
+#Sets in python are created inside curley brackets
+#Sets are not ordered thus cannot be indexed.
+#Sets do not allow duplicates
+food={"Sushi","Ugali","Mayai"}
+print(food)
+for l in food:
+	print(l)
+	
+#Dictionaries
+#Dictionaries in python allows data to be stored in key value pairs.
+"""A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+   You can access the items of a dictionary by referring to its key name, inside square brackets:
+   There is also a method called get() that will give you the same result
+
+"""
+student={"Name":"Maker","Age":20,"school":"JKUAT"}
+name=student.get("Name")
+print(name)
+print(student.get("Age"))
+
+"""When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
+   You can use the values() method to return values of a dictionary
+   Loop through both keys and values, by using the items() method
+"""
+dict={"name":"Ivy","age":24,"schools":"Kabete"}
+print(dict)
+print(dict.get("age"))
+
+for i in dict:
+  print(i)
+
+x=dict["name"]
+print(x)
+
+dict["age"]=20
+print(dict)
+
+for x in dict.keys():
+  print(x)
+for y in dict.values():
+  print(y)
+
+for x,y in dict.items():
+  print(x,y)
+
+	
