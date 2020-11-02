@@ -32,3 +32,42 @@ print(Person2.name)
 print(Person2.age)
 print(Person2.height)
 print(Person2.sing())
+
+"""Class Inheritance"""
+
+class Car:
+  def __init__(self,model,size,color,price):
+    self.model=model
+    self.size=size
+    self.color=color
+    self.price=price
+
+  def speed(self):
+
+    print("The car of color red covered a distance of one kilometer at a speed of wind")
+
+class Subaru(Car):
+  pass
+
+class Subaru2(Car):
+  def __init__(self,model,size,color,price):
+    Car.__init__(self,model,size,color,price)
+    self.distance=1800
+
+     
+
+
+
+  
+car1=Car("BMW","SMALL","BLACK",100000)
+print(car1.speed())
+print(car1.model)
+car2=Subaru("Toyota","Big","Red",200000000)
+print(car2.speed())
+print(car2.model)
+car3=Subaru2("Toyota","Small","Yellow",450000)
+print(car3.distance)
+print(car3.speed())
+
+  
+                      
