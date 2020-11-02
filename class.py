@@ -33,7 +33,9 @@ print(Person2.age)
 print(Person2.height)
 print(Person2.sing())
 
-"""Class Inheritance"""
+"""Class Inheritance
+   To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class
+"""
 
 class Car:
   def __init__(self,model,size,color,price):
@@ -50,9 +52,10 @@ class Subaru(Car):
   pass
 
 class Subaru2(Car):
-  def __init__(self,model,size,color,price):
+  def __init__(self,model,size,color,price,distance,wheels):
     Car.__init__(self,model,size,color,price)
     self.distance=1800
+    self.wheels=wheels
 
      
 
@@ -65,9 +68,10 @@ print(car1.model)
 car2=Subaru("Toyota","Big","Red",200000000)
 print(car2.speed())
 print(car2.model)
-car3=Subaru2("Toyota","Small","Yellow",450000)
+car3=Subaru2("Toyota","Small","Yellow",450000,180,9)
 print(car3.distance)
 print(car3.speed())
+print(car3.wheels)
 
   
                       
