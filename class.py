@@ -57,11 +57,7 @@ class Subaru2(Car):
     self.distance=1800
     self.wheels=wheels
 
-     
-
-
-
-  
+      
 car1=Car("BMW","SMALL","BLACK",100000)
 print(car1.speed())
 print(car1.model)
@@ -72,6 +68,31 @@ car3=Subaru2("Toyota","Small","Yellow",450000,180,9)
 print(car3.distance)
 print(car3.speed())
 print(car3.wheels)
+
+
+
+"""
+CLASS BASED CHALLENGES
+1:Write a python class to convert an interger to a roman numeral"""
+
+class Converter:
+  def __init__(self,number,numeral):
+    self.number=number
+    self.numeral=numeral
+
+  def change(self):
+    check=type(self.number)
+    if check ==int:
+      print(self.numeral)
+
+    else:
+      print(self.number)
+
+x=Converter(200,"viiiiii")
+print(x.change())
+      
+
+
 
   
                       
