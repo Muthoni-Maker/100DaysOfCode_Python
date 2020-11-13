@@ -249,5 +249,17 @@ print(dict2)
 dict.update(dict2)
 print(dict)
 
+"""DAY 8
+  ESCAPING CHARACTERS IN PYTHON
+  To insert characters that are illegal in a string, use an escape character.
+
+   An escape character is a backslash \ followed by the character you want to insert."""
+  sentence="Twinkle,twinkle,little star\n.\tHow I wonder what you are!.\n\t\tUp above the word so high,\n\t\tLike a diamond in the sky.\nTwinkle,twinkle,little star,\n\tHow I wonder what you are"
+print(sentence)
+
+text="I love talking to girls\'s schools especially the one located at \"Mt Kilimanjaro"
+print(text)
+
+
 
 	
