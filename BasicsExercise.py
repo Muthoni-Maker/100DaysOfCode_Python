@@ -48,6 +48,14 @@ transform_to_list=list(exam_st_date)
 print(transform_to_list)
 print(transform_to_list[0])
 
+"""QUIZ8: Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn. """
+
+"""QUIZ9:Write a Python program to print the calendar of a given month and year."""
+import calendar
+
+yy=2020
+month=11
+print(calendar.month(yy,month))
 
 
 
